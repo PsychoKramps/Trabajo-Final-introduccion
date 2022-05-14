@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/Style-login.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+         <!--login-->
+        <form id="formLogin" action="" class="form_login">
+
+            <h2>SING IN</h2>
+
+            <input type="text" id="username" class="box"  placeholder="Nombre de usuario" required>
+            <input type="password" id="pass" name = "Password"  class = "box" placeholder="Enter password" required>      
+            <input type="submit"  value="Sing in" id="sing_in">
+            <div class="container_register">
+            <input type="submit" value="Register" id="btn_register" >
+            <a href="">Forget password?</a>
+
+            </div>  
+
+        </form>
+
+
+        <!--login register-->
+        <form id="form" action="" class="form_register">
+            <h2>Register</h2>
+            <input type="text" id="useName"   class="box"  placeholder="Nombre de usuario" required>
+            <input type="email" class="box" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" class="box" placeholder="Password" required>
+            <input type="submit"  class="box" value="Send" id="send">
+            <a href="" id="link_log"> Already have  account?</a>
+
+        </form>
+
+        
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="/js/usuario.js"></script>
+</body>
+</html>

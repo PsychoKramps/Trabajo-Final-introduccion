@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+
+.container
+{
+    border-color: 1px black;
+    display: flex;
+    height: 500px;
+    width: 400px;
+    /*border: 1px solid black;*/
+    margin:  auto;
+    margin-top: 90px;
+    border-radius: 30px;
+    position: relative;
+    
+}
+
+.container  form{
+    display:  flex;
+    flex-direction: column;
+    width: 100%;  
+    height: 100%;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 30px
+}
+
+
+.container form  h2{
+     font-size: 3rem;
+     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin: 40px;
+     color: #1a5276;
+}
+
+
+.box{
+    padding: 12px;
+    width: 65%;
+    margin: 15px;
+    border: 1px solid black;
+    outline:  none;
+    border-radius: 40px;
+}
+
+#sing_in{
+    padding: 12px 30px;
+    width: 40%;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline:  none;
+    border-radius: 20px;
+}
+#send{
+    padding: 12px 30px;
+    width: 40%;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline:  none;
+    border-radius: 20px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: #750000;
+}
+.container_register{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center
+    
+    
+}
+#btn_register{ 
+    display: flex;
+    flex-direction: row;
+    padding: 12px 50px;
+    width: 40%;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline:  none;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#btn_register:hover,
+#sing_in:hover,
+#send:hover {
+    cursor: pointer;
+    background-color: #1a5276;
+
+}
+
+a{
+    text-decoration:none ;
+    color: black;
+    margin-top: 20px;
+
+}
+
+a:hover{
+    color: #1a5276;
+}
+
+form.form_login{
+    opacity: 1;
+    display: block;
+    text-align: center;
+
+}
+
+form.form_register{
+     opacity: 1;
+    display: none;
+    text-align: center;
+}
+@media screen and(max-width: 500px)
+{
+    .container{
+        margin-top: 50px;
+    }
+    .container form{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+}
+    
